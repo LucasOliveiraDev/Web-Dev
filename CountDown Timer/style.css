@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/grind.webp');
+    /*background-color: rgb(95, 158, 160);*/
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: repeat;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    
+}
+
+h1{
+    font-weight: bold;
+    font-size: 4rem;
+    color: rgb(0, 136, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-top: -1rem;
+}
+
+.counter-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.big-text{
+    font-size: 7rem;
+    line-height: 1;
+    color: azure;
+    text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin: 0 3rem;
+    font-weight: bold;
+}
+
+.text-c {
+    text-align: center;
+}
+
+.text-c span{
+    font-size: 1.5rem;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
