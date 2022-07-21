@@ -1,4 +1,4 @@
-const daysEl = document.getElementById('days')
+/*const daysEl = document.getElementById('days')
 const hoursEl = document.getElementById('hours')
 const minsEl = document.getElementById('mins')
 const secsEl = document.getElementById('secs')
@@ -30,4 +30,6 @@ function formatTime(time){
 // initial call
 countdown();
 
-setInterval(countdown, 1000)
+setInterval(countdown, 1000)*/
+
+// GLOBAL VARIABLES

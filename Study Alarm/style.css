@@ -1,62 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
 
+body {
+    height: 100%;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.0), 
+        rgba(0, 0, 0, 1)
+      ), url("images/Student-final.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 75vh;
+    resize: auto auto;  
+ }
+ 
+
 * {
     box-sizing: border-box;
 }
-
-body {
- 
-    background: rgba(0, 0, 0, .20) url('images/Student-final.webp');
-    background-blend-mode: darken;
-    /*background-color: rgb(95, 158, 160);*/
-    display: flex;
-    flex-direction: column;
-    background-size: cover;
-    background-repeat: repeat;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    font-family: 'Oswald', sans-serif;
-    margin: 0;
     
-}
 
 h1{
-    font-weight: bold;
-    font-size: 4rem;
-    color: rgb(255, 217, 0);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    margin-top: -1rem;
-}
-
-.counter-container{
     display: flex;
-    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-top: 10rem;
+    margin-bottom: 1.5rem;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 4rem auto;
-    border-radius: 10px;
 }
 
-.big-text{
-    font-size: 7rem;
+.numbersbg{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.637);
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    
+
+}
+
+.numbers{
+    font-size: 5rem;
     line-height: 1;
-    color: rgb(255, 217, 0);
+    color: rgb(255, 255, 255);
     text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    margin: 0 3rem;
+    margin: 0 1rem;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: rgb(0, 0, 0);
+    margin: 0 0.6rem;
+    padding: 0.5rem 1rem;
+    transition: 0.7s;
+    border-radius: 0.7rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
-.text-c {
-    text-align: center;
+button:hover{
+    opacity: 0.8;
 }
 
-.text-c span{
-    font-size: 1.5rem;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: rgb(255, 217, 0);
+button:active{
+    background-color: rgb(255, 255, 255);
 }
-
-
-
-
