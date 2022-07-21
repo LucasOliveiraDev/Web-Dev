@@ -1,17 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
 
-body {
-    height: 100%;
+.imgback{
+    
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.0), 
         rgba(0, 0, 0, 1)
-      ), url("images/Student-final.webp");
+      ),  url("images/Student-final.webp");
+
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 75vh;
-    resize: auto auto;  
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(3px) grayscale(100%);
+    
+
+}
+
+body {
+    height: 100%;
+    /*background-image: linear-gradient(
+        rgba(0, 0, 0, 0.0), 
+        rgba(0, 0, 0, 1)
+      ), url("images/Student-final2.webp");*/
+    
+    min-height: 100vh;
+    resize: auto auto;
+    overflow: hidden;
+
  }
  
+ .counter-container{
+
+    height: 102vh;
+    padding-top: 5rem;
+    
+ }
 
 * {
     box-sizing: border-box;
@@ -20,13 +47,13 @@ body {
 
 h1{
     display: flex;
-    font-weight: bold;
-    font-size: 6rem;
-    color: rgb(255, 255, 255);
+    font-size: 6em;
+    color: rgba(255, 238, 0, 0.884);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    margin-top: 10rem;
     margin-bottom: 1.5rem;
     justify-content: center;
+
+
 }
 
 .numbersbg{
@@ -36,8 +63,7 @@ h1{
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.637);
     max-width: 30rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 2rem;
@@ -70,7 +96,7 @@ h1{
     user-select: none;
     cursor: pointer;
 
-    color: rgb(255, 255, 255);
+    color: rgba(57, 143, 255, 0.747);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     background-color: rgb(0, 0, 0);
     margin: 0 0.6rem;
