@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body,html {
-    margin: 0;
-    padding: 0;
     background-color: black;
+    margin: 0;
+    padding: 0;    
 }
+
+/*
+.imgback {
+    
+   
+    background-image: url("images/1.webp");
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(3px) brightness(30%);    
+}*/
 
 * {
     box-sizing: border-box;
@@ -16,12 +32,13 @@ body,html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 #clock {
     font-family: 'Press Start 2P', cursive;
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 100px;
     background-image: linear-gradient(180deg, rgba(99,253,136,1) 0%,
     rgba(51,197,142,1) 50%,
     rgba(39,116,116,1) 100%);
