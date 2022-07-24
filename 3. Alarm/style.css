@@ -6,10 +6,9 @@ body,html {
     padding: 0;    
 }
 
-/*
+/* ADICIONANDO IMAGEM ISOLADAMENTE
 .imgback {
     
-   
     background-image: url("images/1.webp");
     position: fixed;
     background-size: cover;
