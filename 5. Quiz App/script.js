@@ -33,17 +33,37 @@ const quizData = [
     }
 ];
 
+const questionEl = document.getElementById('questionText');
 const aText = document.getElementById('aText');
 const bText = document.getElementById('bText');
 const cText = document.getElementById('cText');
 const dText = document.getElementById('dText');
+const submitBtn = document.getElementById('submit');
 
-let currentQuestion = 0;
+let currentQuiz = 0;
 
 loadQuiz();
 
 function loadQuiz() {
+    const currentQuizData = quizData[currentQuiz];
+    questionEl.innerText = currentQuizData.question;
 
-    currentQuestion++;
+    aText.innerText = currentQuizData.a;
+    bText.innerText = currentQuizData.b;
+    cText.innerText = currentQuizData.c;
+    dText.innerText = currentQuizData.d;
 
+    console.log(currentQuiz+" "+quizData.length);
 }
+
+submitBtn.addEventListener('click', ()=>{
+    currentQuiz++;
+
+    if(currentQuiz < quizData.length){
+        loadQuiz();
+    }
+    else{
+        alert("You finished! Get yourself in the present!");
+    }
+    
+});
