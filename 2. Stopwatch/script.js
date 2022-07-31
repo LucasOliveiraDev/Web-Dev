@@ -1,5 +1,4 @@
 // GLOBAL VARIABLES
-
 const time_el = document.querySelector('.numbersbg .numbers');
 const start_btn = document.getElementById('start');
 const stop_btn = document.getElementById('stop');
