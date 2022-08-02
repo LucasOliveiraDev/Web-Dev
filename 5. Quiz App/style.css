@@ -31,6 +31,8 @@ body {
 
 h2{
     margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
 ul li{
@@ -43,6 +45,10 @@ ul {
     padding: 0;
 }
 
+ul li label{
+    cursor: pointer;
+}
+
 button{
     background-color: #fd79a8;
     border: none;
@@ -52,5 +58,9 @@ button{
     font-size: 15px;
     width: 100%;
     padding: 7px;
+}
+
+button:hover{
+    background-color: #fc9bbd;
 }
 

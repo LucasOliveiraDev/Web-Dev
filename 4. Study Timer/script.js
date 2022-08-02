@@ -33,9 +33,9 @@ function timer (){
     if (hrs<10) hrs='0'+hrs;
 
     if(mins>25){
-        alarm.play();
-        reset();    
+        alarm.play();    
         setTimeout(() => alarm.pause(), 10000);
+        reset();
     }
         
 
