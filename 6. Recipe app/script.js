@@ -104,6 +104,8 @@ async function fetchFavMeals(){
     console.log(meal);
 }
 
+////////////////////////CONTINUAR NO FUTURO, NÃO POSSUO CONHECIMENTO SUFICIENTE HOJE 07/08/2022: https://www.youtube.com/watch?v=dtKciwk_si4&list=RDCMUCeU-1X402kT-JlLdAitxSMA&start_radio=1 | TEMPO: 2:20:00
+
 /*
 //PUT THE MEAL ON THE SCREEN
 function addMealFav(mealData){
