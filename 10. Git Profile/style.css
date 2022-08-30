@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #403A3E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BE5869, #403A3E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BE5869, #403A3E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    background-color: #0000006e;
+    border-radius: 10px;
+    border: none;
+    color: #eee;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 8px;
+    margin-bottom: 60px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    margin-top: 250px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 17px;
+    overflow: hidden;
+    display: flex;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    max-width: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .cardText{
+    color: #eee;
+    margin-left: 30px;
+}
+
+.card img{
+    border-radius: 50%;
+    width: 170px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 10px solid rgba(0, 0, 0, 0.288);
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    list-style-type: none;
+    margin-left: -39px;
+}
+
+.info li{
+    display: flex;
+    align-items: center;
+}
+
+.info strong{
+    font-size: 15px;
+    margin-left: 5px;
+}

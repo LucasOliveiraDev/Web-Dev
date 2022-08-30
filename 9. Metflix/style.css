@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(53, 69, 114);
+    margin: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+header{
+    background-color: rgb(67, 86, 138);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.search{
+    padding: 0.5rem 1rem;
+    background-color: rgb(67, 86, 138);
+    border-radius: 50px;
+    border: 2px solid rgb(26, 37, 68);
+    font-family: inherit;
+    font-size: 20px;
+    color: white;
+}
+
+.search::placeholder{
+    color: rgb(105, 127, 187);
+    font-size: 20px;
+}
+
+.search:focus {
+    outline: none;
+    background-color: rgb(53, 69, 114);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie{
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.295);
+    background-color: rgb(67, 86, 138);
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.movie img{
+    max-width: 100%;
+
+}
+
+.movie-info{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: -1px;
+    font-size: 13px;
+}
+
+.movie-info h3{
+    margin: 0;
+}
+
+.movie-info span{
+    background-color:  rgb(53, 69, 114);
+    padding: 0.2rem 0.5rem;
+    font-size: 15px;
+    border-radius: 3px;
+}
+.movie-info span.green{
+    color: rgb(24, 165, 43);
+}
+
+.movie-info span.orange{
+    color: rgb(255, 238, 0);
+}
+
+.movie-info span.red{
+    color: rgb(197, 102, 102);
+}
+
+.overview{
+    background-color: rgba(255, 255, 255, 0.822);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
+    letter-spacing: -1px;
+    font-size: 12px;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.movie:hover .overview{
+    transform: translateY(0%);
+}
