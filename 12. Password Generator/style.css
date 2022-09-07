@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    background-color: rgb(153, 182, 157);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.pw-container{
+    background-color: rgb(72, 92, 74);
+    min-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    border-radius: 3px;
+}
+
+.pw-header{
+    padding: 1rem;
+}
+
+.pw-body{
+    padding: 0 1rem 1rem;
+}
+
+.pw{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(106, 124, 108);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 3px;
+    overflow: auto;
+}
+
+.pw button {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: rgb(75, 99, 78);
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+
+    top: 0;
+    right: 0;
+    transform: translate(0,20%);
+    transition: opacity 0.2s ease, transform 0.3s;
+    opacity: 0;
+
+    cursor: pointer;
+}
+
+.pw:hover button{
+    opacity: 1;
+    transform: translate(0,0%);
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+
+.generate{
+    background-color: rgb(255, 255, 255);
+    color: rgb(90, 94, 91);
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.generate:hover{
+    background-color: rgb(246, 248, 140);
+    color: rgb(90, 94, 91);
+}
