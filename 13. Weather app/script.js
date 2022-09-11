@@ -23,16 +23,15 @@ function addWeathertoPage(data){
     weather.classList.add('weather');
 
     weather.innerHTML=`
-        <small>There are</small>
-        <h2>${temp}ºC</h2>
-        <p>in ${data.name}</p>
+        <h2><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">${temp}ºC<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"></h2>
+        <small>${data.weather[0].main}</small>
     `
     main.innerHTML = '';
     main.appendChild(weather);
 }
 
 function KtoC(K){
-    return (K - 273.15).toFixed(2);
+    return Math.floor(K - 273.15);
 }
 
 form.addEventListener('submit',(e)=>{
